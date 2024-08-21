@@ -1,5 +1,6 @@
 
 accordion("js-accordion");
+disActive("js-disActive");
 langSet("js-body");
 
 function accordion(className){
@@ -11,6 +12,23 @@ function accordion(className){
         });
     });
 }
+
+function disActive(className){
+    let target    = document.getElementsByClassName(className);
+    let targetArr = Array.from(target);
+
+    targetArr.forEach(element => {
+        element.addEventListener("click", function(){
+            let active    = document.getElementsByClassName("is-active");
+            let activeArr = Array.from(active);
+            activeArr.forEach(elementAct => {
+                console.log(elementAct);
+                elementAct.classList.remove("is-active");
+            });
+        });
+    });
+}
+
 
 function langSet(className){
     let target    = document.getElementsByClassName(className)[0];
