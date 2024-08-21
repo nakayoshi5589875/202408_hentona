@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>みんなの宿 HENTONA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body class="js-body">
+    <header class="header">
+        <div class="header_wrap">
+            <h1 class="header_logo"><img src="./assets/img/logo.png" alt="みんなの宿 HENTONA"></h1>
+            <button class="js-accordion header_button">
+            </button>
+            <nav class="header_nav">
+                <a href="#about" class="header_nav_link">
+                    <span class="ja">HENTONAについて</span>
+                    <span class="en">About HENTONA</span>
+                    <span class="ch">關於亨托納</span>
+                    <span class="kr">HENTONA 소개</span>
+                </a>
+                <a href="#gallery" class="header_nav_link">
+                    <span class="ja">客室</span>
+                    <span class="en">Guest room</span>
+                    <span class="ch">客房</span>
+                    <span class="kr">객실</span>
+                </a>
+                <a href="#plan" class="header_nav_link">
+                    <span class="ja">料金プラン</span>
+                    <span class="en">Price plan</span>
+                    <span class="ch">價格方案</span>
+                    <span class="kr">요금 플랜</span>
+                </a>
+                <a href="#access" class="header_nav_link">
+                    <span class="ja">アクセス</span>
+                    <span class="en">Access</span>
+                    <span class="ch">使用權</span>
+                    <span class="kr">액세스</span>
+                </a>
+                <a href="#contect" class="header_nav_link">
+                    <span class="ja">予約</span>
+                    <span class="en">Reservation</span>
+                    <span class="ch">預訂</span>
+                    <span class="kr">예약</span>
+                </a>
+            </nav>
+            <div class="js-accordion header_lang">
+                <p class="header_lang_cel">
+                    <span class="ja">日本語</span>
+                    <span class="en">English</span>
+                    <span class="kr">한국어</span>
+                    <span class="ch">繁体中文</span>
+                </p>
+                <div class="header_lang_select">
+                    <a href="./index.html" class="header_lang_select_cell">日本語</a>
+                    <a href="./index.html?lang=en" class="header_lang_select_cell">English</a>
+                    <a href="./index.html?lang=ch" class="header_lang_select_cell">繁体中文</a>
+                    <a href="./index.html?lang=kr" class="header_lang_select_cell">한국어</a>
+                </div>
+                <svg class="header_lang_arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wrap">
+            <div class="kv">
+                <picture>
+                    <source srcset="./assets/img/kv-sp.jpg" media="(max-width:769px)" />
+                    <img src="./assets/img/kv.jpg" alt="">
+                </picture>
+            </div>
+            <div id="about" class="message">
+                <div class="message_lead">
+                    <span class="ja">Welocom to<br>Okinawa<br>Kunigami village<br>Hentona Stay</span>
+                    <span class="en">Welocom to<br>Okinawa<br>Kunigami village<br>Hentona Stay</span>
+                    <span class="ch">歡迎來到<br>沖繩<br>國頭村<br>亨托納住宿</span>
+                    <span class="kr">Welocom to<br>오키나와<br>쿠니가미 빌리지<br>Hentona Stay</span>
+                </div>
+                <div class="pc message_main">
+                    <span class="ja">沖縄県 国頭村<br>辺土名。<br>徒歩約１分の距離に海がある、<br>１棟貸、古民家の宿です。<br>ゆったりとした時間が流れる<br>沖縄県北部で、<br>大切な人や、家族、仲間と<br>ゆったりお過ごしください。<br></span>
+                    <span class="en">Hentona, Kunigami Village, Okinawa Prefecture.<br>The sea is about a 1 minute walk away.<br>This is an inn in an old folk house that rents out one building.<br>Time passes slowly<br>In northern Okinawa Prefecture,<br>With loved ones, family, and friends<br>Please have a relaxing time.</span>
+                    <span class="ch">沖繩縣國頭村亨托納。<br>步行約1分鐘即可到達大海。<br>這是一間出租一棟老民宅的客棧。<br>時間慢慢流逝<br>在沖繩縣北部，<br>與親人、家人和朋友一起<br>請度過輕鬆的時光。</span>
+                    <span class="kr">오키나와현 쿠니가미무라베 토명.<br>도보 약 1분 거리에 바다가 있는,<br>1동대, 고민가의 숙소입니다.<br>느긋한 시간이 흐른다<br>오키나와현 북부에서,<br>소중한 사람, 가족, 동료와<br>느긋하게 보내주세요.</span>
+                </div>
+                <div class="sp message_main">
+                    沖縄県 国頭村　辺土名。
+                </div>
+                <div class="sp message_main">
+                    徒歩約１分の距離に海がある、<br>
+                    １棟貸、古民家の宿です。
+                </div>
+                <div class="sp message_main">
+                    ゆったりとした時間が流れる<br>
+                    沖縄県北部で、<br>
+                    大切な人や、家族、仲間と<br>
+                    ゆったりお過ごしください。
+                </div>
+            </div>
+        </section>
+        <section class="wrap">
+            <div class="location">
+                <h2 class="location_head">
+                    <span class="ja">ロケーション</span>
+                    <span class="en">location</span>
+                    <span class="ch">地點</span>
+                    <span class="kr">위치</span>
+                </h2>
+                <div class="location_container">
+                    <div class="location_block">
+                        <p><img src="./assets/img/locaton01.jpg" alt=""></p>
+                        <small class="location_caption">
+                            <span class="ja">商店街入り口</span>
+                            <span class="en">Shopping street entrance</span>
+                            <span class="ch">商店街入口</span>
+                            <span class="kr">상점가 입구</span>
+                        </small>
+                    </div>
+                    <div class="location_block">
+                        <p><img src="./assets/img/locaton02.jpg" alt=""></p>
+                        <small class="location_caption">
+                            <span class="ja">桃原（とうばる）ビーチ</span>
+                            <span class="en">Tobaru Beach</span>
+                            <span class="ch">戶原海灘</span>
+                            <span class="kr">모모바라 비치</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="gallery" class="gallery">
+                <div class="gallery_container">
+                    <div class="gallery_block">
+                        <h2 class="gallery_head">
+                            <span class="ja">客室</span>
+                            <span class="en">Guest room</span>
+                            <span class="ch">客房</span>
+                            <span class="kr">객실</span>
+                        </h2>
+                        <img src="./assets/img/gallery01.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery02.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery03.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery04.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery05.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery06.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery07.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery08.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery09.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery10.jpg" alt="">
+                    </div>
+                    <div class="gallery_block">
+                        <img src="./assets/img/gallery11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="floor" class="floor">
+            <div class="floor_top">
+                <div class="floor_map">
+                    <div class="floor_map_wrap">
+                        <p class="floor_map_text01">
+                            <span class="ja">入口</span>
+                            <span class="en">Entrance</span>
+                            <span class="ch">入口</span>
+                            <span class="kr">입구</span>
+                        </p>
+                        <p class="floor_map_text02">
+                            <span class="ja">駐車場［２台］</span>
+                            <span class="en">Parking lot [2 cars]</span>
+                            <span class="ch">停車場【2輛車】</span>
+                            <span class="kr">주차장[2대]</span>
+                        </p>
+                        <p class="floor_map_text03">
+                            <span class="ja">庭</span>
+                            <span class="en">garden</span>
+                            <span class="ch">花園</span>
+                            <span class="kr">정원</span>
+                        </p>
+                        <p class="floor_map_text04">
+                            <span class="ja">玄関</span>
+                            <span class="en">entrance</span>
+                            <span class="ch">入口</span>
+                            <span class="kr">현관</span>
+                        </p>
+                        <p class="floor_map_text05">
+                            <span class="ja">リビング</span>
+                            <span class="en">living</span>
+                            <span class="ch">活的</span>
+                            <span class="kr">거실</span>
+                        </p>
+                        <p class="floor_map_text06">
+                            <span class="ja">キッチン</span>
+                            <span class="en">kitchen</span>
+                            <span class="ch">廚房</span>
+                            <span class="kr">부엌</span>
+                        </p>
+                        <p class="floor_map_text07">
+                            <span class="ja">寝室</span>
+                            <span class="en">bedroom</span>
+                            <span class="ch">臥室</span>
+                            <span class="kr">침실</span>
+                        </p>
+                        <p class="floor_map_text08">
+                            <span class="ja">シャワー</span>
+                            <span class="en">shower</span>
+                            <span class="ch">淋浴</span>
+                            <span class="kr">샤워</span>
+                        </p>
+                        <p class="floor_map_text09">
+                            <span class="ja">WC</span>
+                            <span class="en">W.C.</span>
+                            <span class="ch">廁所。</span>
+                            <span class="kr">WC</span>
+                        </p>
+                        <p class="floor_map_main"><img src="./assets/img/floor_map.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="floor_block">
+                    <p class="floor_block_text">
+                        <span class="ja">建物内には、ダブルベッド１台・シングル２段ベット（１台）があります。テラスにはBBQグリル完備！ご家族や仲間でワイワイパーティーをしたり、観光の拠点として、長期滞在にもおすすめです。1年を通してお楽しみいただけます。</span>
+                        <span class="en">There is one double bed and one single bunk bed in the building. There is a BBQ grill on the terrace! It is also recommended for long-term stays, as a base for sightseeing, and for parties with family and friends. You can enjoy it all year round.</span>
+                        <span class="ch">大樓內設有一張雙人床和一張單人雙層床。露台上有烤肉架！也適合長期住宿、觀光、與家人朋友聚會的場所。一年四季你都可以享受它。</span>
+                        <span class="kr">건물 내에는 더블 침대 1대, 싱글 2단 베팅(1대)이 있습니다. 테라스에는 BBQ 그릴 완비! 가족이나 동료에서 와이와이 파티를 하거나 관광의 거점으로서 장기 체류에도 추천입니다. 일년 내내 즐길 수 있습니다.</span>
+                    </p>
+                    <dl class="floor_define">
+                        <dt class="floor_define_term">
+                            <span class="ja">定員</span>
+                            <span class="en">Capacity</span>
+                            <span class="ch">容量</span>
+                            <span class="kr">정원</span>
+                        </dt>
+                        <dd class="floor_define_details">
+                            <span class="ja">1～8名</span>
+                            <span class="en">1-8 people</span>
+                            <span class="ch">1-8人</span>
+                            <span class="kr">1~8명</span>
+                        </dd>
+                    </dl>
+                    <dl class="floor_define">
+                        <dt class="floor_define_term">
+                            <span class="ja">ベット</span>
+                            <span class="en">bet</span>
+                            <span class="ch">賭注</span>
+                            <span class="kr">베팅</span>
+                        </dt>
+                        <dd class="floor_define_details">
+                            <span class="ja">ダブルベット（１台） <br class="sp">シングル２段ベット（１台）</span>
+                            <span class="en">Double bed (1 bed) <br class="sp">Single bunk bed (1 bed)</span>
+                            <span class="ch">雙人床 (1 張床) <br class="sp">單人雙層床 (1 張床)</span>
+                            <span class="kr">더블 베팅(1대) <br class="sp">싱글 2단 베팅(1대)</span>
+                        </dd>
+                    </dl>
+                    <small class="floor_notes">
+                        <span class="ja">※室内禁煙、屋外での喫煙可 ※ペット不可</span>
+                        <span class="en">*No smoking indoors, smoking allowed outdoors *No pets allowed</span>
+                        <span class="ch">*室內禁止吸煙，室外允許吸煙*禁止攜帶寵物</span>
+                        <span class="kr">※실내 금연, 옥외에서의 흡연 가능 ※애완동물 불가</span>
+                    </small>
+                    <p class="floor_strong">
+                        <span class="ja">チェックイン 15:00〜 <span class="pc">/</span> <br class="sp">チェックアウト 〜11:00</span>
+                        <span class="en">Check-in 15:00~ <span class="pc">/</span> <br class="sp">Check-out ~11:00</span>
+                        <span class="ch">入住15:00~ <span class="pc">/</span> <br class="sp">退房~11:00</span>
+                        <span class="kr">체크인 15:00〜 <span class="pc">/</span> <br class="sp">체크아웃 〜11:00</span>
+                    </p>
+                </div>
+            </div>
+            <div class="floor_details">
+                <dl class="floor_details_define">
+                    <dt class="floor_details_define_term">
+                        <span class="ja">アメニティ</span>
+                        <span class="en">Amenities</span>
+                        <span class="ch">便利設施</span>
+                        <span class="kr">어메니티</span>
+                    </dt>
+                    <dd class="floor_details_define_details">
+                        <span class="ja">シャンプー / コンディショナー / ボディーソープ / 歯ブラシ / ヘアブラシ / スリッパ</span>
+                        <span class="en">Shampoo / Conditioner / Body soap / Toothbrush / Hairbrush / Slippers</span>
+                        <span class="ch">洗髮精/護髮素/沐浴乳/牙刷/髮刷/拖鞋</span>
+                        <span class="kr">샴푸 / 컨디셔너 / 바디 비누 / 칫솔 / 헤어 브러시 / 슬리퍼</span>
+                    </dd>
+                </dl>
+                <dl class="floor_details_define">
+                    <dt class="floor_details_define_term">
+                        <span class="ja">設備</span>
+                        <span class="en">equipment</span>
+                        <span class="ch">裝置</span>
+                        <span class="kr">장비</span>
+                    </dt>
+                    <dd class="floor_details_define_details">
+                        <span class="ja">ネット / エアコン / 空気清浄機 / TV</span>
+                        <span class="en">Net / Air conditioner / Air purifier / TV</span>
+                        <span class="ch">網路/空調/空氣清淨機/電視</span>
+                        <span class="kr">그물 / 에어컨 / 공기 청정기 / TV</span>
+                    </dd>
+                </dl>
+                <dl class="floor_details_define">
+                    <dt class="floor_details_define_term">
+                        <span class="ja">キッチン</span>
+                        <span class="en">kitchen</span>
+                        <span class="ch">廚房</span>
+                        <span class="kr">부엌</span>
+                    </dt>
+                    <dd class="floor_details_define_details">
+                        <span class="ja">冷蔵庫 / 食器類 / 鍋・フライパンなどの調理道具 / 電子レンジ / トースター / 炊飯器 / ケトル / BBQグリル/ ※塩・コショウ・しょうゆ・油・焼き肉のたれなど一部調味料を常備しております。</span>
+                        <span class="en">Refrigerator / Tableware / Cooking utensils such as pots and frying pans / Microwave oven / Toaster / Rice cooker / Kettle / BBQ grill / *Some seasonings such as salt, pepper, soy sauce, oil, and grilled meat sauce are always available.</span>
+                        <span class="ch">冰箱 / 餐具 / 鍋子、煎鍋等烹飪用具 / 微波爐 / 烤麵包機 / 電鍋 / 水壺 / 燒烤架 / * 一些調味料如鹽、胡​​椒、醬油、油、烤肉醬隨時可用。</span>
+                        <span class="kr">냉장고 / 식기류 / 냄비 · 프라이팬 등의 조리 도구 / 전자 레인지 / 토스터 / 밥솥 / 주전자 / BBQ 그릴 / ※ 소금 · 후추 · 간장 · 기름 · 구운 고기의 기름 등 일부 조미료를 상비하고 있습니다.</span>
+                    </dd>
+                </dl>
+                <dl class="floor_details_define">
+                    <dt class="floor_details_define_term">
+                        <span class="ja">洗面・洗濯</span>
+                        <span class="en">Washroom/laundry</span>
+                        <span class="ch">洗手間/洗衣房</span>
+                        <span class="kr">세면・세탁</span>
+                    </dt>
+                    <dd class="floor_details_define_details">
+                        <span class="ja">洗濯機 / ドライヤー / 洗剤 / ハンガー・クリップなど</span>
+                        <span class="en">Washing machine/dryer/detergent/hangers/clips, etc.</span>
+                        <span class="ch">洗衣機/烘乾機/清潔劑/衣架/夾子等</span>
+                        <span class="kr">세탁기 / 드라이어 / 세제 / 옷걸이, 클립 등</span>
+                    </dd>
+                </dl>
+                <dl class="floor_details_define">
+                    <dt class="floor_details_define_term">
+                        <span class="ja">その他</span>
+                        <span class="en">others</span>
+                        <span class="ch">其他的</span>
+                        <span class="kr">기타</span>
+                    </dt>
+                    <dd class="floor_details_define_details">
+                        <span class="ja">釣り道具一式 / BBQグリル</span>
+                        <span class="en">Fishing equipment set / BBQ grill</span>
+                        <span class="ch">釣魚用具套裝/燒烤爐</span>
+                        <span class="kr">낚시 도구 세트 / BBQ 그릴</span>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section id="plan" class="plan">
+            <div class="plan_wrap">
+                <div class="plan_main">
+                    <p class="plan_price">
+                        <span class="ja"><b class="plan_price_strong">25,000</b>円［税込］</span>
+                        <span class="en"><b class="plan_price_strong">25,000</b> yen [tax included]</span>
+                        <span class="ch"><b class="plan_price_strong">25,000</b>日圓[含稅]</span>
+                        <span class="kr"><b class="plan_price_strong">25,000</b>엔［세금 포함］</span>
+                    </p>
+                    <small class="plan_small">
+                        <span class="ja">※シーズンによって料金が異なります。詳しくは下記予約フォームからご確認ください。</span>
+                        <span class="en">*Prices vary depending on the season. Please check the reservation form below for details.</span>
+                        <span class="ch">*價格因季節而異。詳情請查看下面的預訂表格。</span>
+                        <span class="kr">※시즌에 따라 요금이 다릅니다. 자세한 내용은 아래 예약 양식에서 확인하시기 바랍니다.</span>
+                    </small>
+                    <a href="" class="plan_button">
+                        <span class="ja">料金をみる</span>
+                        <span class="en">See prices</span>
+                        <span class="ch">查看價格</span>
+                        <span class="kr">요금 보기</span>
+                        <svg class="plan_button_arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.16728e-05 5.23129C-1.16641e-05 5.03238 0.079006 4.84161 0.219659 4.70096C0.360311 4.56031 0.551076 4.48129 0.749988 4.48129L9.43999 4.48129L6.21999 1.26129C6.08751 1.11912 6.01539 0.93107 6.01881 0.736769C6.02224 0.542468 6.10095 0.357083 6.23837 0.21967C6.37578 0.0822568 6.56116 0.00354483 6.75547 0.000116618C6.94977 -0.00331159 7.13781 0.0688116 7.27999 0.201292L11.78 4.70129C11.9204 4.84192 11.9993 5.03254 11.9993 5.23129C11.9993 5.43004 11.9204 5.62067 11.78 5.76129L7.27999 10.2613C7.13781 10.3938 6.94977 10.4659 6.75547 10.4625C6.56116 10.459 6.37578 10.3803 6.23837 10.2429C6.10095 10.1055 6.02224 9.92011 6.01881 9.72581C6.01539 9.53151 6.08751 9.34347 6.21999 9.20129L9.43999 5.98129L0.749988 5.98129C0.551076 5.98129 0.360311 5.90227 0.219659 5.76162C0.0790059 5.62097 -1.16815e-05 5.4302 -1.16728e-05 5.23129Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+                <h2 class="plan_head">
+                    <span class="ja">料金プラン</span>
+                    <span class="en">Price plan</span>
+                    <span class="ch">價格方案</span>
+                    <span class="kr">요금 플랜</span>
+                </h2>
+            </div>
+        </section>
+        <section id="access" class="access">
+            <div class="access_wrap">
+                <div class="access_map_block">
+                    <h2 class="access_map_head">
+                        <span class="ja">アクセス</span>
+                        <span class="en">access</span>
+                        <span class="ch">使用權</span>
+                        <span class="kr">액세스</span>
+                    </h2>
+                    <ul class="access_flow">
+                        <li class="access_flow_block">
+                            <span class="ja">HENTONA</span>
+                            <span class="en">HENTONA</span>
+                            <span class="ch">亨托納</span>
+                            <span class="kr">HENTONA</span>
+                        </li>
+                        <li class="access_flow_route">
+                            <p class="access_flow_route_block">
+                                <span class="ja">国道58号線</span>
+                                <span class="en">National Route 58</span>
+                                <span class="ch">國道58號線</span>
+                                <span class="kr">국도 58호선</span>
+                            </p>
+                            <p class="access_flow_route_block">
+                                <span class="ja">約35分</span>
+                                <span class="en">Approximately 35 minutes</span>
+                                <span class="ch">約35分鐘</span>
+                                <span class="kr">약 35분</span>
+                            </p>
+                        </li>
+                        <li class="access_flow_block">
+                            <span class="ja">許田IC</span>
+                            <span class="en">Kyoda IC</span>
+                            <span class="ch">許田IC</span>
+                            <span class="kr">쿄다 IC</span>
+                        </li>
+                        <li class="access_flow_route">
+                            <p class="access_flow_route_block">
+                                <span class="ja">沖縄自動車道</span>
+                                <span class="en">Okinawa Expressway</span>
+                                <span class="ch">沖繩高速公路</span>
+                                <span class="kr">오키나와 자동차도로</span>
+                            </p>
+                            <p class="access_flow_route_block">
+                                <span class="ja">約65分</span>
+                                <span class="en">Approximately 65 minutes</span>
+                                <span class="ch">約65分鐘</span>
+                                <span class="kr">약 65분</span>
+                            </p>
+                        </li>
+                        <li class="access_flow_block">
+                            <span class="ja">那覇空港</span>
+                            <span class="en">naha airport</span>
+                            <span class="ch">那霸機場</span>
+                            <span class="kr">나하 공항</span>
+                        </li>
+                        <li class="access_flow_route">
+                            <p class="access_flow_route_block-wide">
+                                <span class="ja">車で移動する場合</span>
+                                <span class="en">When traveling by car</span>
+                                <span class="ch">駕車旅行時</span>
+                                <span class="kr">차로 이동하는 경우</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access_map">
+                    <p class="access_map_logo"><img src="./assets/img/hentona_map_logo.png" alt="みんなの宿HENTONA"></p>
+                    <p class="access_map_text01">
+                        <span class="ja">国頭村</span>
+                        <span class="en">Kunigami Village</span>
+                        <span class="ch">國頭村</span>
+                        <span class="kr">쿠니가미무라</span>
+                    </p>
+                    <p class="access_map_text02">
+                        <span class="ja">大宜味村</span>
+                        <span class="en">Ogimi village</span>
+                        <span class="ch">大宜味村</span>
+                        <span class="kr">오기미무라</span>
+                    </p>
+                    <p class="access_map_text03">
+                        <span class="ja">東村</span>
+                        <span class="en">Higashi Village</span>
+                        <span class="ch">東村</span>
+                        <span class="kr">히가시무라</span>
+                    </p>
+                    <p class="access_map_text04">
+                        <span class="ja">名護市</span>
+                        <span class="en">Nago City</span>
+                        <span class="ch">名護市</span>
+                        <span class="kr">나고시</span>
+                    </p>
+                    <p class="access_map_text05">
+                        <span class="ja">本部町</span>
+                        <span class="en">Motobu town</span>
+                        <span class="ch">本部町</span>
+                        <span class="kr">모토부쵸</span>
+                    </p>
+                    <p class="access_map_text06">
+                        <span class="ja">今帰仁村</span>
+                        <span class="en">Nakijin village</span>
+                        <span class="ch">今歸仁村</span>
+                        <span class="kr">나키진촌</span>
+                    </p>
+                    <p class="access_map_text07">
+                        <span class="ja">許田IC</span>
+                        <span class="en">Kyoda IC</span>
+                        <span class="ch">許田IC</span>
+                        <span class="kr">쿄다 IC</span>
+                    </p>
+
+                    <img src="./assets/img/hentona_map.png" alt="">
+                </div>
+                <p class="access_message">
+                    <span class="ja">海岸線のドライブを楽<br class="sp">しみながら<br>お越しください</span>
+                </p>
+                <div class="access_iframe">
+                    <div class="access_iframe_main">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.9302454501453!2d128.17517147543353!3d26.746601976746458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4431ae42ca90b%3A0x451eab34d7ce4040!2z44CSOTA1LTE0MTEg5rKW57iE55yM5Zu96aCt6YOh5Zu96aCt5p2R6L665Zyf5ZCN77yR77yZ77yU!5e0!3m2!1sja!2sjp!4v1723985099675!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="access_iframe_notes">
+                        <span class="ja">駐車場　2台［宿泊者無料］</span>
+                        <span class="en">Parking lot: 2 spaces [Free for guests]</span>
+                        <span class="ch">停車場：2個[住宿者免費]</span>
+                        <span class="kr">주차장 2대[숙박자 무료]</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contect">
+            <a href="" class="button">
+                <span class="ja">予約する</span>
+                <span class="en">make a reservation</span>
+                <span class="ch">預訂</span>
+                <span class="kr">예약</span>
+                <svg class="button_arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.16728e-05 5.23129C-1.16641e-05 5.03238 0.079006 4.84161 0.219659 4.70096C0.360311 4.56031 0.551076 4.48129 0.749988 4.48129L9.43999 4.48129L6.21999 1.26129C6.08751 1.11912 6.01539 0.93107 6.01881 0.736769C6.02224 0.542468 6.10095 0.357083 6.23837 0.21967C6.37578 0.0822568 6.56116 0.00354483 6.75547 0.000116618C6.94977 -0.00331159 7.13781 0.0688116 7.27999 0.201292L11.78 4.70129C11.9204 4.84192 11.9993 5.03254 11.9993 5.23129C11.9993 5.43004 11.9204 5.62067 11.78 5.76129L7.27999 10.2613C7.13781 10.3938 6.94977 10.4659 6.75547 10.4625C6.56116 10.459 6.37578 10.3803 6.23837 10.2429C6.10095 10.1055 6.02224 9.92011 6.01881 9.72581C6.01539 9.53151 6.08751 9.34347 6.21999 9.20129L9.43999 5.98129L0.749988 5.98129C0.551076 5.98129 0.360311 5.90227 0.219659 5.76162C0.0790059 5.62097 -1.16815e-05 5.4302 -1.16728e-05 5.23129Z" fill="white"/>
+                </svg>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_logo"><img src="./assets/img/logo.png" alt="みんなの宿 HENTONA"></p>
+        <div class="footer_bottom">
+            <p class="pc">
+                <span class="ja">〒905-1411 沖縄県国頭郡国頭村字辺土名194</span>
+                <span class="en">194 Hentona, Kunigami Village, Kunigami District, Okinawa Prefecture 905-1411</span>
+                <span class="ch">沖繩縣國頭郡國頭村Hentona 194 郵編：905-1411</span>
+                <span class="kr">〒905-1411 오키나와현 구니가미군 구니가미무라 아자베 토나 194</span>
+            </p>
+            <p>COPYRIGHT © MINNANOYADO HENTONA</p>
+        </div>
+    </footer>
+</body>
+</html>
