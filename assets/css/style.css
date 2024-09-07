@@ -51,12 +51,13 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
 }
 .header_nav_link{
     display: inline-block;
     color: #000;
     text-decoration: unset;
-    margin-left: calc(46vw / 1440 * 100);
+    margin-right: calc(50vw / 1440 * 100);
     font-size: calc(16vw / 1440 * 100);
     font-weight: 700;
 }
@@ -197,7 +198,7 @@ button{
         text-decoration: unset;
         margin-bottom: calc(36vw / 390 * 100);
         margin-left: calc(70vw / 390 * 100);
-        font-size: calc(30vw / 390 * 100);
+        font-size: calc(24vw / 390 * 100);
         font-weight: 700;
     }
     .header_lang{
@@ -213,7 +214,7 @@ button{
     .header:has(.is-active.header_button) .header_lang{
         display: block;
         position: fixed;
-        bottom: calc(50vw / 390 * 100);;
+        bottom: calc(50vw / 390 * 100);
         right: 0;
         font-size: calc(14vw / 390 * 100);
         width: calc(315vw / 390 * 100);
@@ -271,6 +272,7 @@ button{
     align-items: center;
     margin: calc(63vw / 1440 * 100) auto calc(97vw / 1440 * 100) calc(174vw / 1440 * 100);
     font-family: "Zen Old Mincho", serif;
+    -webkit-font-smoothing: antialiased;
 }
 .message_lead{
     font-size: calc(30vw / 1440 * 100);
@@ -320,28 +322,28 @@ button{
         width: 100%;
         height: 100vh;
         font-size: calc(24vw / 390* 100);
-        padding: 0 calc(64vw / 390* 100);
-        line-height: 3;
+        padding: 0 calc(74vw / 390* 100);
+        line-height: 2.5;
         writing-mode: vertical-rl;
         margin-left: 0;
     }
     .message_bg{
-        display: none;
+        margin-top: calc(80vw / 390* 100);
         position: sticky;
-        top: 0;
         left: 0;
         width: 100%;
+        height: 100vh;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        pointer-events: none;
     }
     .message_bg-l{
-        width: calc(50vw / 390* 100);
+        width: calc(60vw / 390* 100);
     }
     .message_bg-r{
-        width: calc(50vw / 390* 100);
+        width: calc(60vw / 390* 100);
     }
-    
 }
 
 .location{
@@ -704,12 +706,10 @@ button{
 }
 .floor_details_define_term{
     font-size: calc(18vw / 1440 * 100);
-    font-weight: 600;
 }
 .floor_details_define_details{
     margin-top: calc(16vw / 1440 * 100);
     font-size: calc(14vw / 1440 * 100);
-    font-weight: 600;
 }
 
 @media (max-width: 769px){
@@ -1006,7 +1006,7 @@ button{
     }
     .plan_small{
         display: block;
-        margin-top: calc(4vw / 390 * 100);
+        margin-top: calc(24vw / 390 * 100);
         font-size: calc(14vw / 390 * 100);
         line-height: 1.4;
     }
@@ -1053,7 +1053,8 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(247vw / 1440 * 100);;
+    height: calc(247vw / 1440 * 100);;
     font-size: calc(24vw / 1440 * 100);
     font-weight: 400;
     letter-spacing: .1em;
@@ -1069,7 +1070,7 @@ button{
 .access_flow_block{
     width: 100%;
     padding: calc(9vw / 1440 * 100) 0;
-    font-size: calc(20vw / 1440 * 100) 0;
+    font-size: calc(20vw / 1440 * 100);
     text-align: center;
     border: 1px solid #579A30;
     color: #579A30;
@@ -1216,6 +1217,7 @@ button{
 .access_iframe_main iframe{
     width: 100%;
     height: 100%;
+    filter: grayscale(1);
 }
 .access_iframe_notes{
     margin-top: calc(14vw / 1440 * 100);
@@ -1248,6 +1250,7 @@ button{
         align-items: center;
         margin-left: calc(21vw / 390 * 100);
         width: auto;
+        height: auto;
         box-sizing: border-box;
         font-size: calc(24vw / 390 * 100);
         font-weight: 400;
@@ -1267,7 +1270,7 @@ button{
     .access_flow_block{
         width: 100%;
         padding: calc(9vw / 390 * 100) 0;
-        font-size: calc(20vw / 390 * 100) 0;
+        font-size: calc(20vw / 390 * 100);
         text-align: center;
         border: 1px solid #579A30;
         color: #579A30;
@@ -1463,7 +1466,7 @@ button{
         width: calc(330vw / 390 * 100);
         height: calc(83vw / 390 * 100);
         font-size: calc(22vw / 390 * 100);
-        letter-spacing: 0;
+        letter-spacing: .6em;
         text-indent: 1em;
         text-decoration: none;
         color: #fff;
@@ -1536,6 +1539,8 @@ body.lang_ja .ja{
 }
 .en{
     display: none;
+    letter-spacing: 0em;
+    font-family: "Noto Sans", sans-serif;
     writing-mode: initial;
 }
 body.lang_en .en{
@@ -1543,6 +1548,7 @@ body.lang_en .en{
 }
 .kr{
     display: none;
+    font-family: "Noto Sans KR", sans-serif;
     /* writing-mode: initial; */
 }
 body.lang_kr .kr{
@@ -1550,6 +1556,7 @@ body.lang_kr .kr{
 }
 .ch{
     display: none;
+    font-family: "Noto Sans TC", sans-serif;
     /* writing-mode: initial; */
 }
 body.lang_ch .ch{
