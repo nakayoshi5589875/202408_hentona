@@ -285,6 +285,9 @@ button{
     writing-mode: vertical-rl;
     margin-left: calc(103vw / 1440* 100);
 }
+.message_main .en{
+    writing-mode: initial;
+}
 .message_bg{
     display: none;
     position: sticky;
@@ -504,6 +507,7 @@ button{
     .gallery_block:nth-child(1){
         grid-column: 1 / 6;
         grid-row   : 1 / 2;
+        z-index: 10;
     }
     .gallery_block:nth-child(2){
         grid-column: 1 / 6;
@@ -564,6 +568,7 @@ button{
         color: #579A30;
         font-size: calc(28vw / 390 * 100);
         background-color: #fff;
+        white-space: nowrap
     }
 }
 
@@ -1241,7 +1246,7 @@ button{
         flex-direction: column;
     }
     .access_map_block{
-        width: calc(247vw / 390 * 100);
+        width: auto;
         margin-top: 0;
     }
     .access_map_head{
@@ -1541,7 +1546,7 @@ body.lang_ja .ja{
     display: none;
     letter-spacing: 0em;
     font-family: "Noto Sans", sans-serif;
-    writing-mode: initial;
+    /* writing-mode: initial; */
 }
 body.lang_en .en{
     display: unset;
