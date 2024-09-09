@@ -486,11 +486,19 @@ button{
     left: calc(118vw / 1440 * 100);
     width: calc(247vw / 1440 * 100);
     height: calc(241vw / 1440 * 100);
+    font-weight: 400;
     writing-mode: vertical-rl;
     color: #579A30;
     font-size: calc(28vw / 1440 * 100);
     background-color: #fff;
 }
+body.lang_en .gallery_head{
+    writing-mode: initial;
+    padding: 0;
+    width: calc(247vw / 1440 * 100);
+    height: calc(247vw / 1440 * 100);
+}
+
 
 @media (max-width: 769px){
     .gallery_container{
@@ -567,8 +575,16 @@ button{
         writing-mode: vertical-rl;
         color: #579A30;
         font-size: calc(28vw / 390 * 100);
+        line-height: 1.2;
         background-color: #fff;
         white-space: nowrap
+    }
+    body.lang_en .gallery_head{
+        writing-mode: initial;
+        padding: 0;
+        text-align: center;
+        width: calc(143vw / 390 * 100);
+        height: calc(143vw / 390 * 100);
     }
 }
 
@@ -742,6 +758,7 @@ button{
     .floor_map_main{
         width: calc(840vw / 390 * 100);
         height: calc(430vw / 390 * 100);
+        -webkit-overflow-scrolling: touch;
     }
     .floor_map_main img{
         width: 100%;
@@ -916,6 +933,17 @@ button{
     writing-mode: vertical-rl;
     padding: calc(35vw / 1440 * 100) calc(100vw / 1440 * 100);
 }
+body.lang_en .plan_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(247vw / 1440 * 100);
+    height: calc(247vw / 1440 * 100);
+    box-sizing: border-box;
+    font-size: calc(28vw / 1440 * 100);
+    writing-mode: initial;
+    padding: 0;
+}
 .plan_main{
     width: calc(580vw / 1440 * 100);
 }
@@ -1000,6 +1028,18 @@ button{
         writing-mode: vertical-rl;
         padding: calc(35vw / 390 * 100) calc(8vw / 390 * 100);
     }
+    body.lang_en .plan_head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(143vw / 390 * 100);
+        height: calc(143vw / 390 * 100);
+        box-sizing: border-box;
+        font-size: calc(28vw / 390 * 100);
+        line-height: 1.2;
+        writing-mode: initial;
+        padding: 0;
+    }
     .plan_main{
         width: calc(235vw / 390 * 100);
     }
@@ -1067,6 +1107,13 @@ button{
     background-color: #579A30;
     writing-mode: vertical-rl;
     padding: calc(52vw / 1440 * 100) 0;
+}
+body.lang_en .access_map_head{
+    writing-mode: initial;
+    padding: 0;
+    text-align: center;
+    width: calc(247vw / 1440 * 100);;
+    height: calc(247vw / 1440 * 100);;
 }
 .access_flow{
     margin-top: calc(120vw / 1440 * 100);
@@ -1249,6 +1296,9 @@ button{
         width: auto;
         margin-top: 0;
     }
+    body.lang_en .access_map_block{
+        margin-bottom: calc(240vw / 1440 * 100);
+    }
     .access_map_head{
         display: flex;
         justify-content: center;
@@ -1264,6 +1314,13 @@ button{
         background-color: #579A30;
         writing-mode: vertical-rl;
         padding: calc(52vw / 390 * 100) calc(12vw / 390 * 100);
+    }
+    body.lang_en .access_map_head{
+        writing-mode: initial;
+        padding: 0;
+        text-align: center;
+        width: calc(143vw / 390 * 100);
+        height: calc(143vw / 390 * 100);
     }
     .access_flow{
         position: absolute;
@@ -1334,6 +1391,10 @@ button{
         font-weight: 400;
         letter-spacing: .1em;
         writing-mode: unset;
+    }
+    body.lang_en .access_message{
+        top: calc(55vw / 390* 100);
+        left: calc(209vw / 390* 100);
     }
     .access_map_logo{
         position: absolute;
