@@ -45,7 +45,8 @@ button{
     display: none;
 }
 .header_logo{
-    width: calc(216vw / 1440 * 100);
+    width: calc(216vw / 1440* 100);
+    margin-left: calc(7vw / 1440* 100);
 }
 .header_nav{
     display: flex;
@@ -129,7 +130,7 @@ button{
         display: block;
         position: absolute;
         top: calc(30vw / 390 * 100);
-        right: calc(21vw / 390 * 100);
+        right: calc(16vw / 390 * 100);
         width: calc(38vw / 390 * 100);
         height: calc(11vw / 390 * 100);
         z-index: 50;
@@ -269,21 +270,22 @@ button{
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    margin: calc(63vw / 1440 * 100) auto calc(97vw / 1440 * 100) calc(174vw / 1440 * 100);
+    align-items: flex-start;
+    margin: calc(63vw / 1440 * 100) auto calc(51vw / 1440 * 100) calc(174vw / 1440 * 100);
     font-family: "Zen Old Mincho", serif;
     -webkit-font-smoothing: antialiased;
 }
 .message_lead{
-    font-size: calc(30vw / 1440 * 100);
-    line-height: 1.8;
+    font-size: calc(30vw / 1440* 100);
+    line-height: 1.9;
     color: #757575;
+    margin-top: calc(30vw / 1440* 100);
 }
 .message_main{
     font-size: calc(24vw / 1440* 100);
-    line-height: 3;
+    line-height: 3.15;
     writing-mode: vertical-rl;
-    margin-left: calc(103vw / 1440* 100);
+    margin-left: calc(87vw / 1440* 100);
 }
 .message_main .en{
     writing-mode: initial;
@@ -310,13 +312,13 @@ button{
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        margin: calc(21vw / 390 * 100) auto calc(97vw / 390 * 100);
+        margin: calc(42vw / 390 * 100) auto calc(97vw / 390 * 100);
     }
     .message_lead{
         font-size: calc(30vw / 390 * 100);
         line-height: 1.8;
         color: #757575;
-        margin-left: calc(60vw / 390 * 100);
+        margin-left: calc(85vw / 390 * 100);
     }
     .message_main{
         display: flex;
@@ -354,15 +356,15 @@ button{
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-left: calc(51vw / 1440 * 100);
 }
 .location_head{
-    font-size: calc(24vw / 1440 * 100);
+    font-size: calc(24vw / 1440* 100);
     font-weight: 400;
     color: #fff;
     background-color: #579A30;
     writing-mode: vertical-rl;
-    padding: calc(48vw / 1440 * 100) calc(16vw / 1440 * 100);
+    margin-left: calc(53vw / 1440* 100);
+    padding: calc(48vw / 1440* 100) calc(9vw / 1440* 100);
 }
 .location_container{
     display: flex;
@@ -391,10 +393,10 @@ button{
     }
     .location_head{
         position: relative;
-        font-size: calc(24vw / 390 * 100);
-        margin-left: calc(32vw / 390 * 100);
-        margin-bottom: calc(-83vw / 390 * 100);
-        padding: calc(48vw / 390 * 100) calc(16vw / 390 * 100);
+        font-size: calc(24vw / 390* 100);
+        margin-left: calc(38vw / 390* 100);
+        margin-bottom: calc(-83vw / 390* 100);
+        padding: calc(48vw / 390* 100) calc(9vw / 390* 100);
         z-index: 1;
     }
     .location_container{
@@ -423,7 +425,7 @@ button{
     grid-template-rows: calc(670vw / 1440 * 100) calc(506vw / 1440 * 100) calc(270vw / 1440 * 100) calc(506vw / 1440 * 100) calc(270vw / 1440 * 100);
     column-gap: calc(16% / 1440 * 100);
     row-gap: calc(16vw / 1440 * 100);
-    margin-top: calc(51vw / 1440 * 100);
+    margin-top: calc(71vw / 1440 * 100);
 }
 .gallery_block{
     position: relative;
@@ -507,7 +509,7 @@ body.lang_en .gallery_head{
         grid-template-rows: calc(255vw / 390 * 100) calc(271vw / 390 * 100) calc(367vw / 390 * 100) calc(140vw / 390 * 100) calc(246vw / 390 * 100) calc(190vw / 390 * 100) calc(181vw / 390 * 100) calc(133vw / 390 * 100);
         column-gap: calc(5% / 390 * 100);
         row-gap: calc(5vw / 390 * 100);
-        margin-top: calc(51vw / 390 * 100);
+        margin-top: calc(94vw / 390 * 100);
     }
     .gallery_block{
         position: relative;
@@ -712,25 +714,26 @@ body.lang_en .gallery_head{
     line-height: 2;
 }
 .floor_strong{
-    margin-top: calc(25vw / 1440 * 100);
+    margin-top: calc(16vw / 1440 * 100);
     font-size: calc(18vw / 1440 * 100);
     line-height: 2;
     font-weight: 600;
 }
 .floor_details{
     width: calc(1030vw / 1440 * 100);
-    margin: calc(21vw / 1440 * 100) auto;
+    margin: calc(45vw / 1440 * 100) auto
 }
 
 .floor_details_define:not(:first-child){
-    margin-top: calc(21vw / 1440 * 100);
+    margin-top: calc(52vw / 1440 * 100);
 }
 .floor_details_define_term{
     font-size: calc(18vw / 1440 * 100);
 }
 .floor_details_define_details{
-    margin-top: calc(16vw / 1440 * 100);
+    margin-top: calc(18vw / 1440 * 100);
     font-size: calc(14vw / 1440 * 100);
+    line-height: 2;
 }
 
 @media (max-width: 769px){
@@ -837,14 +840,14 @@ body.lang_en .gallery_head{
         font-weight: 600;
     }
     .floor_block{
-        margin: calc(60vw / 390 * 100) auto 0;
+        margin: calc(86vw / 390 * 100) auto 0;
         width: calc(330vw / 390 * 100);
         padding-bottom: calc(53vw / 390 * 100);
         border-bottom: 1px solid #000;
     }
     .floor_block_text{
-        margin-bottom: calc(51vw / 390 * 100);
-        font-size: calc(14vw / 390 * 100);
+        margin-bottom: calc(36vw / 390* 100);
+        font-size: calc(14vw / 390* 100);
         line-height: 2;
         font-weight: 400;
     }
@@ -853,7 +856,7 @@ body.lang_en .gallery_head{
         justify-content: flex-start;
         align-items: flex-start;
         font-size: calc(14vw / 390 * 100);
-        line-height: 2;
+        line-height: 2.2;
         font-weight: 400;
     }
     .floor_define_term{
@@ -868,7 +871,7 @@ body.lang_en .gallery_head{
         line-height: 2;
     }
     .floor_strong{
-        margin-top: calc(25vw / 390 * 100);
+        margin-top: calc(18vw / 390 * 100);
         font-size: calc(18vw / 390 * 100);
         line-height: 2;
         font-weight: 400;
@@ -887,6 +890,7 @@ body.lang_en .gallery_head{
     .floor_details_define_details{
         margin-top: calc(16vw / 390 * 100);
         font-size: calc(14vw / 390 * 100);
+        line-height: 2;
         font-weight: 400;
     }
 }
@@ -927,7 +931,7 @@ body.lang_en .gallery_head{
 .plan_head{
     font-size: calc(28vw / 1440 * 100);
     font-weight: 400;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
     color: #579A30;
     background-color: #fff;
     writing-mode: vertical-rl;
@@ -949,6 +953,7 @@ body.lang_en .plan_head{
 }
 .plan_price{
     font-size: calc(20vw / 1440 * 100);
+    line-height: 2;
 }
 .plan_price_strong{
     font-size: calc(40vw / 1440 * 100);
@@ -972,7 +977,7 @@ body.lang_en .plan_head{
 }
 .plan_button_arrow{
     position: absolute;
-    inset: 0 calc(29vw / 1440 * 100) 0 auto;
+    inset: 0 calc(20vw / 1440 * 100) 0 auto;
     margin: auto;
     width: calc(12vw / 1440 * 100);
     height: calc(12vw / 1440 * 100);
@@ -1044,10 +1049,12 @@ body.lang_en .plan_head{
         width: calc(235vw / 390 * 100);
     }
     .plan_price{
+        margin-top: calc(10vw / 390 * 100);
         font-size: calc(20vw / 390 * 100);
     }
     .plan_price_strong{
         font-size: calc(40vw / 390 * 100);
+        font-weight: 400;
     }
     .plan_small{
         display: block;
@@ -1060,15 +1067,14 @@ body.lang_en .plan_head{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        color: #000;
-        margin-top: calc(40vw / 390 * 100);
-        padding: calc(23vw / 390 * 100) 0;
-        font-size: calc(18vw / 390 * 100);
+        margin-top: calc(45vw / 390* 100);
+        padding: calc(25vw / 390* 100) 0;
+        font-size: calc(18vw / 390* 100);
         width: 100%;
         line-height: 1;
         text-decoration: none;
         color: #fff;
-        background-color: #579A30;
+        background-color: #579A30
     }
     .plan_button_arrow{
         position: absolute;
@@ -1081,7 +1087,7 @@ body.lang_en .plan_head{
 }
 
 .access{
-    width: calc(1130vw / 1440 * 100);
+    width: calc(1210vw / 1440 * 100);
     margin: calc(128vw / 1440 * 100) auto 0;
 }
 .access_wrap{
@@ -1100,9 +1106,9 @@ body.lang_en .plan_head{
     align-items: center;
     width: calc(247vw / 1440 * 100);;
     height: calc(247vw / 1440 * 100);;
-    font-size: calc(24vw / 1440 * 100);
+    font-size: calc(28vw / 1440 * 100);
     font-weight: 400;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
     color: #fff;
     background-color: #579A30;
     writing-mode: vertical-rl;
@@ -1121,7 +1127,7 @@ body.lang_en .access_map_head{
 }
 .access_flow_block{
     width: 100%;
-    padding: calc(9vw / 1440 * 100) 0;
+    padding: calc(1vw / 1440 * 100) 0;
     font-size: calc(20vw / 1440 * 100);
     text-align: center;
     border: 1px solid #579A30;
@@ -1155,13 +1161,36 @@ body.lang_en .access_map_head{
     font-weight: 600;
     text-align-last: left;
 }
+.access_flow_route_block02:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: calc(14vw / 1440 * 100);
+    height: calc(110vw / 1440 * 100);
+    padding: calc(10vw / 1440 * 100);
+    font-weight: 600;
+    text-align: right;
+    border-right: 1px solid #929292;
+}
+.access_flow_route_block02:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: calc(14vw / 1440 * 100);
+    height: calc(110vw / 1440 * 100);
+    padding: calc(10vw / 1440 * 100);
+    font-weight: 600;
+    text-align-last: left;
+}
 .access_flow_route_block-wide{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: calc(14vw / 1440 * 100);
-    height: calc(80vw / 1440 * 100);
+    height: calc(60vw / 1440 * 100);
     font-weight: 600;
     text-align-last: left;
 }
@@ -1172,13 +1201,14 @@ body.lang_en .access_map_head{
 }
 .access_message{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
+    top: calc(42vw / 1440* 100);
+    right: calc(64vw / 1440* 100);
+    width: auto;
     font-family: "Zen Old Mincho", serif;
-    font-size: calc(20vw / 1440 * 100);
+    font-size: calc(20vw / 1440* 100);
     font-weight: 400;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
+    line-height: 2.2;
     writing-mode: vertical-rl;
 }
 .access_map_logo{
@@ -1259,8 +1289,8 @@ body.lang_en .access_map_head{
 }
 .access_iframe{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: calc(40vw / 1440* 100);
+    right: calc(80vw / 1440* 100);
 }
 .access_iframe_main{
     width: calc(347vw / 1440 * 100);
@@ -1281,8 +1311,8 @@ body.lang_en .access_map_head{
 @media (max-width: 769px){
     .access{
         width: 100%;
-        margin: calc(128vw / 390 * 100) auto 0;
-        padding-bottom: calc(800vw / 390 * 100);
+        margin: calc(98vw / 390 * 100) auto 0;
+        padding-bottom: calc(750vw / 390 * 100);
         overflow: hidden;
     }
     .access_wrap{
@@ -1303,17 +1333,18 @@ body.lang_en .access_map_head{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: calc(21vw / 390 * 100);
+        margin-left: calc(30vw / 390 * 100);
         width: auto;
         height: auto;
         box-sizing: border-box;
         font-size: calc(24vw / 390 * 100);
         font-weight: 400;
-        letter-spacing: .1em;
+        white-space: nowrap;
+        letter-spacing: .5em;
         color: #fff;
         background-color: #579A30;
         writing-mode: vertical-rl;
-        padding: calc(52vw / 390 * 100) calc(12vw / 390 * 100);
+        padding: calc(52vw / 390 * 100) calc(9vw / 390 * 100);
     }
     body.lang_en .access_map_head{
         writing-mode: initial;
@@ -1325,13 +1356,13 @@ body.lang_en .access_map_head{
     .access_flow{
         position: absolute;
         margin: 0 auto;
-        width: calc(264vw / 390 * 100);
+        width: calc(247vw / 390 * 100);
         inset: calc(660vw / 390 * 100) 0 0;
         font-family: "Zen Old Mincho", serif;
     }
     .access_flow_block{
         width: 100%;
-        padding: calc(9vw / 390 * 100) 0;
+        padding: calc(1vw / 390 * 100) 0;
         font-size: calc(20vw / 390 * 100);
         text-align: center;
         border: 1px solid #579A30;
@@ -1365,6 +1396,29 @@ body.lang_en .access_map_head{
         font-weight: 600;
         text-align-last: left;
     }
+    .access_flow_route_block02:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-size: calc(14vw / 390 * 100);
+        height: calc(110vw / 390 * 100);
+        padding: calc(10vw / 390 * 100);
+        font-weight: 600;
+        text-align: right;
+        border-right: 1px solid #929292;
+    }
+    .access_flow_route_block02:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-size: calc(14vw / 390 * 100);
+        height: calc(110vw / 390 * 100);
+        padding: calc(10vw / 390 * 100);
+        font-weight: 600;
+        text-align-last: left;
+    }
     .access_flow_route_block-wide{
         display: flex;
         justify-content: center;
@@ -1388,12 +1442,13 @@ body.lang_en .access_map_head{
         width: 100%;
         font-family: "Zen Old Mincho", serif;
         font-size: calc(20vw / 390 * 100);
+        line-height: 1.8;
         font-weight: 400;
         letter-spacing: .1em;
         writing-mode: unset;
     }
     body.lang_en .access_message{
-        top: calc(55vw / 390* 100);
+        top: calc(40vw / 390* 100);
         left: calc(209vw / 390* 100);
     }
     .access_map_logo{
@@ -1477,7 +1532,7 @@ body.lang_en .access_map_head{
         position: absolute;
         bottom: unset;
         width: calc(347vw / 390 * 100);
-        top: calc(1080vw / 390* 100);
+        top: calc(1050vw / 390* 100);
         right: 0;
         left: 0;
         margin: auto;
@@ -1503,7 +1558,7 @@ body.lang_en .access_map_head{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: calc(191vw / 1440 * 100) auto ;
+    margin: calc(174vw / 1440 * 100) auto calc(114vw / 1440 * 100);
     width: calc(509vw / 1440 * 100);
     height: calc(83vw / 1440 * 100);
     font-size: calc(24vw / 1440 * 100);
@@ -1541,7 +1596,7 @@ body.lang_en .access_map_head{
     .button_arrow{
         position: absolute;
         top: 0;
-        right: calc(39vw / 390 * 100);
+        right: calc(29vw / 390 * 100);
         bottom: 0;
         width: calc(12vw / 390 * 100);
         height: calc(12vw / 390 * 100);
@@ -1572,7 +1627,7 @@ body.lang_en .access_map_head{
         padding-bottom: calc(68vw / 390 * 100);
     }
     .footer_logo{
-        width: calc(247vw / 390 * 100);
+        width: calc(202vw / 390 * 100);
         margin: auto;
     }
     .footer_bottom{
