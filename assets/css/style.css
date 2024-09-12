@@ -1,3 +1,12 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(200vw / 1440 * 100);
+}
+@media (max-width: 769px){
+    html{
+        scroll-padding-top: calc(50vw / 390 * 100);
+    }
+}
 body{
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     font-weight: 400;
@@ -17,9 +26,10 @@ button{
     border: none;
     background-color: unset;
 }
+
 .wrap{
     width: calc(1204vw / 1440 * 100);
-    margin: auto;
+    margin: calc(150vw / 1440 * 100) auto 0;
 }
 
 @media (max-width: 769px){
@@ -31,8 +41,14 @@ button{
 
 
 .header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: calc(38vw / 1440 * 100) 0 calc(30vw / 1440 * 100);
     font-family: "Zen Old Mincho", serif;
+    background-color: #fff;
+    z-index: 100;
 }
 .header_wrap{
     display: flex;
@@ -128,7 +144,7 @@ button{
     }
     .header_button{
         display: block;
-        position: absolute;
+        position: fixed;
         top: calc(30vw / 390 * 100);
         right: calc(16vw / 390 * 100);
         width: calc(38vw / 390 * 100);
@@ -1682,4 +1698,14 @@ body.lang_kr .kr{
 }
 body.lang_ch .ch{
     display: unset;
+}
+
+.fadeIn{
+    opacity: 0;
+    filter: blur(.5vw);
+    transition: opacity .6s, filter .6s ;
+}
+.fadeIn.is-view{
+    opacity: 1;
+    filter: blur(0);
 }

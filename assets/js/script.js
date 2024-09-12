@@ -2,6 +2,7 @@
 accordion("js-accordion");
 disActive("js-disActive");
 langSet("js-body");
+scrollIn("js-scrollIn");
 
 function accordion(className){
     let target    = document.getElementsByClassName(className);
@@ -48,4 +49,28 @@ function langSet(className){
         return false;
     }
     target.classList.toggle("lang_ja");
+}
+
+
+// scrollIn
+// ------------------------------------------------------------
+function scrollIn(Class){
+    const headings = document.querySelectorAll('.' + Class);
+    const options = {
+      threshold: 1
+    };
+
+    const observer = new IntersectionObserver(showElements);
+
+    headings.forEach(heading => {
+      observer.observe(heading);
+    });
+
+    function showElements(entries){
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-view');
+        }
+      });
+    };
 }
